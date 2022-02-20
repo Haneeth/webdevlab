@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+    scroll-behavior: smooth; 
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(255, 255, 255);
+}
+
+.logofixed
+{
+    position: fixed;
+    height: 4em;
+    width: 4em;
+    top: 30px;
+    left: 30px;
+    z-index: 999;
+}
+
+
+.container  
+{
+    
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+}
+
+.container .section 
+{
+    position:relative; 
+    width:100%;
+    height:100%;
+    background-blend-mode: multiply;
+  
+}
+.container .section:nth-child(1)
+{
+    background:  rgb(125, 125, 207) url(images/homeimage.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+.container .section:nth-child(1) 
+{
+    color: rgb(255, 255, 255);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .section .content1:nth-child(1) 
+{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.p1h1
+{
+    color: rgb(255, 0, 0);
+    font-size: 4em;
+}
+
+
+.container .section:nth-child(2)
+{
+    background:rgb(175, 172, 172) url(images/starter1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+
+} 
+
+
+.content2 {
+    display: flex;
+    height: 100vh;
+    margin: 0% 5% 0% 5%;
+
+}
+
+.p2h1 , .p2h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 50%;
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+
+}
+
+.container .section:nth-child(3)
+{
+    background: rgb(125,125,125) url(images/maincourse.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+
+} 
+
+
+.content3 {
+    display: flex;
+    height: 100vh;
+    margin: 0% 5% 0% 5%;
+
+}
+
+.p3h1 , .p3h2 {
+    color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 50%;
+    font-size: 1.5em;
+
+}
+
+.container .section:nth-child(4)
+{
+    background: rgb(189, 189, 189) url(images/desertimage.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+
+} 
+
+
+.content4 {
+    display: flex;
+    height: 100vh;
+    margin: 0% 5% 0% 5%;
+
+}
+
+.p4h1 , .p4h2 {
+    color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 50%;
+    font-size: 1.5em;
+    
+
+
+}
+
+
+.container .section:nth-child(5)
+{
+    background: url(images/introvertback.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+
+} 
+
+
+.content5 {
+    display: flex;
+    height: 100vh;
+    margin: 0% 5% 0% 5%;
+
+}
+
+.p5h1 , .p5h2 {
+    display: flex;
+    align-items: center;
+    color: azure;
+    justify-content: center;
+    flex-basis: 50%;
+    font-size: 1.5em;
+
+}
+
+@media screen and (max-width: 550spx)
+{
+ .logofixed
+ {
+     position: fixed;
+     height: 2em;
+     width: 2em;
+     top: 20px;
+     left: 20px;
+     z-index: 999;
+ }
+}
+
+
+
+@media screen and (max-width: 970px) {
+
+    .content1{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    
+    .p1h1 {
+        font-size: 2.5em;
+    }
+
+    .content2
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+    }
+   .p2h1 , .p2h2 {
+       
+       font-size: 1em;
+   }
+   .content3
+    {
+        padding-top: 150px;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+   .p3h1 , .p2h3 {
+       
+       font-size: 1.2em;
+   }
+
+   .content4
+    {
+        padding-bottom: 150px;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        
+    }
+   .p4h1 , .p4h2 {
+       
+       font-size: 1.2em;
+   }
+
+   .content5
+    {
+        padding-top: 150px;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+   .p5h1 , .p5h2 {
+       
+       font-size: 1.2em;
+   }
+  
+   }
+ 
+   @media screen and (max-width: 550spx)
+   {
+    .logofixed
+    {
+        position: fixed;
+        height: 2em;
+        width: 2em;
+        top: 20px;
+        left: 20px;
+        z-index: 999;
+    }
+   }
